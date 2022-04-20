@@ -293,13 +293,13 @@ cat("\n\n###################################################################")
 cat("\n# ====> TCP-TR-NH: COPY TO HOME                                     #")
 cat("\n#####################################################################\n\n")
 
-str0 = "~/TCP-KNN-H/Reports"
+str0 = "~/TCP-Random-NH/Reports"
 if(dir.exists(str0)==FALSE){dir.create(str0)}
 
 str1 = paste(str0, "/", similarity, sep="")
 if(dir.exists(str1)==FALSE){dir.create(str1)}
 
-str2 = paste(str1, "/Knn-H", sep="")
+str2 = paste(str1, "/NH", sep="")
 if(dir.exists(str2)==FALSE){dir.create(str2)}
 
 str3 = paste(str2, "/", dataset_name, sep="")
@@ -309,24 +309,6 @@ str4 = paste("cp -r ", diretorios$folderReports, "/* ", str3, sep="")
 print(system(str4))
 
 
-
-
-cat("\n\n###################################################################")
-cat("\n# ====> TCP-Random-NH: COPY TO GOOGLE DRIVE                             #")
-cat("\n#####################################################################\n\n")
-origem1 = str3
-destino1 = paste("cloud:[2022]ResultadosExperimentos/Communities/Test/",
-                 similarity, "/", dataset_name, "/NH/", sep="")
-comando1 = paste("rclone copy ", origem1, " ",
-                 destino1, sep="")
-cat("\n\n\n", comando1, "\n\n\n")
-a = print(system(comando1))
-a = as.numeric(a)
-if(a != 0){
-  stop("Erro RCLONE")
-  quit("yes")
-}
-cat("\n\n")
 
 
 str40 = paste("rm -r ", diretorios$folderResults)
