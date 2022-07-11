@@ -5,17 +5,14 @@ This code is part of my doctoral research at PPG-CC/DC/UFSCar. Test Random Parti
 ## How to cite 
 @misc{Gatto2021, author = {Gatto, E. C.}, title = {Test Random Partitions using Communities Detection Methods for Multilabell Classification}, year = {2022}, publisher = {GitHub}, journal = {GitHub repository}, howpublished = {\url{https://github.com/cissagatto/TCP-Random-NH}}}
 
-## Multi-Label Datasets (original)
+## Original Multi-Label Datasets
 Click [here](https://cometa.ujaen.es/datasets/) to go to the cometa page
 
-## 10-Fold Cross Validation Multi-Label Datasets
+## Generated 10-Fold Cross Validation Multi-Label Datasets
 Click [here](https://www.4shared.com/s/dYpGZWzjQ) to download
 
-## Computed Partitions
-
-Jaccard, Cosine, Roger-Tanimoto and Russel-Rao: Click [here](https://www.4shared.com/s/dS5g0oJPb) to download
-
-Random: Click [here](https://www.4shared.com/s/dhsxOnLwH) to download
+## Generated Random Partitions
+Click [here](https://www.4shared.com/s/dhsxOnLwH) to download
 
 ## Conda Environment
 [download txt](https://www.4shared.com/s/fUCVTl13zea)
