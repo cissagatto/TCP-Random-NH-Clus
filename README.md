@@ -6,7 +6,7 @@ This code is part of my doctoral research at PPG-CC/DC/UFSCar. Test Random Parti
 @misc{Gatto2021, author = {Gatto, E. C.}, title = {Test Random Partitions using Communities Detection Methods for Multilabell Classification}, year = {2022}, publisher = {GitHub}, journal = {GitHub repository}, howpublished = {\url{https://github.com/cissagatto/TCP-Random-NH}}}
 
 ## Flowchart
-<img src="https://github.com/cissagatto/TCP-Random-NH-ECC/blob/main/HPML-IJCNN-2023-Page-1.png" width="600">
+<img src="https://github.com/cissagatto/TCP-Random-H-Clus/blob/main/random-graphs-Page-1.png" width="600">
 
 ## Original Multi-Label Datasets
 Click [here](https://cometa.ujaen.es/datasets/) to go to the cometa page
