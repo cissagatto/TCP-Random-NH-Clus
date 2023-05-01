@@ -28,8 +28,8 @@ rm(list=ls())
 cat("\n\n###################################################################")
 cat("\n# ====> TCP-Random-NH: SET WORK SPACE                                   #")
 cat("\n#####################################################################\n\n")
-FolderRoot = "~/TCP-Random-NH/"
-FolderScripts = paste(FolderRoot, "/R/", sep="")
+FolderRoot = "~/TCP-Random-NH-Clus"
+FolderScripts = "~/TCP-Random-NH-Clus/R"
 
 
 cat("\n\n###################################################################")
@@ -44,7 +44,7 @@ cat("\n\n###################################################################")
 cat("\n# ====> TCP-Random-NH: READ DATASETS-2022                               #")
 cat("\n#####################################################################\n\n")
 setwd(FolderRoot)
-datasets <- data.frame(read.csv("datasets-2022.csv"))
+datasets <- data.frame(read.csv("datasets-original.csv"))
 
 
 cat("\n\n###################################################################")
@@ -133,7 +133,7 @@ cat("\n#####################################################################\n\n
 
 
 cat("\nCOPIANDO PARTIÇÕES")
-str20 = paste("cp ~/TCP-Random-NH/Partitions/", similarity ,"/", ds$Name,
+str20 = paste("cp ~/TCP-Random-NH-Clus/Partitions/", similarity ,"/", ds$Name,
               ".tar.gz ", diretorios$folderResults, sep="")
 res = system(str20)
 if(res!=0){break}else{cat("\ncopiou")}
@@ -176,7 +176,7 @@ if(res!=0){break}else{cat("\ncopiou")}
 
 
 cat("\nCOPIANDO DATASETS")
-str26 = paste("cp ~/TCP-Random-NH/Datasets/", ds$Name, ".tar.gz ",
+str26 = paste("cp ~/TCP-Random-NH-Clus/Datasets/", ds$Name, ".tar.gz ",
               diretorios$folderResults, "/datasets/", sep="")
 res=system(str26)
 if(res!=0){break}else{cat("\ncopiou")}
@@ -293,22 +293,17 @@ cat("\n\n###################################################################")
 cat("\n# ====> TCP-TR-NH: COPY TO HOME                                     #")
 cat("\n#####################################################################\n\n")
 
-str0 = "~/TCP-Random-NH/Reports"
+str0 = "~/TCP-Random-NH-Clus/Reports"
 if(dir.exists(str0)==FALSE){dir.create(str0)}
 
-str1 = paste(str0, "/", similarity, sep="")
+str1 = paste(str0, "/silhouette", sep="")
 if(dir.exists(str1)==FALSE){dir.create(str1)}
 
-str2 = paste(str1, "/NH", sep="")
+str2 = paste(str1, "/", dataset_name, sep="")
 if(dir.exists(str2)==FALSE){dir.create(str2)}
-
-str3 = paste(str2, "/", dataset_name, sep="")
-if(dir.exists(str3)==FALSE){dir.create(str3)}
 
 str4 = paste("cp -r ", diretorios$folderReports, "/* ", str3, sep="")
 print(system(str4))
-
-
 
 
 str40 = paste("rm -r ", diretorios$folderResults)

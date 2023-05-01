@@ -18,8 +18,8 @@
 ##################################################################################################
 
 
-FolderRoot = "~/TCP-Random-NH/"
-FolderScripts = paste(FolderRoot, "/R/", sep="")
+FolderRoot = "~/TCP-Random-NH-Clus"
+FolderScripts = "~/TCP-Random-NH-Clus/R"
 
 
 ##################################################################################################
@@ -34,6 +34,9 @@ FolderScripts = paste(FolderRoot, "/R/", sep="")
 #      All path directories                                                                      #
 ##################################################################################################
 directories <- function(dataset_name, folderResults){
+
+  FolderRoot = "~/TCP-Random-NH-Clus"
+  FolderScripts = "~/TCP-Random-NH-Clus/R"
 
   retorno = list()
 

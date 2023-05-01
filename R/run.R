@@ -17,8 +17,8 @@
 #                                                                                                #
 ##################################################################################################
 
-FolderRoot = "~/TCP-Random-NH/"
-FolderScripts = paste(FolderRoot, "/R/", sep="")
+FolderRoot = "~/TCP-Random-NH-Clus"
+FolderScripts = "~/TCP-Random-NH-Clus/R"
 
 
 ##################################################################################################
@@ -56,6 +56,9 @@ execute <- function(ds, dataset_name, number_dataset,
 
   retorno = list()
 
+  FolderRoot = "~/TCP-Random-NH-Clus"
+  FolderScripts = "~/TCP-Random-NH-Clus/R"
+
   setwd(FolderScripts)
   source("testClus.R")
 
@@ -66,7 +69,7 @@ execute <- function(ds, dataset_name, number_dataset,
   cat("\n# ====> RUN: Get dataset information: ", number_dataset, "          #")
   cat("\n#####################################################################\n\n")
   setwd(FolderRoot)
-  datasets <- data.frame(read.csv("datasets-2022.csv"))
+  datasets <- data.frame(read.csv("datasets-original.csv"))
   ds = datasets[number_dataset,]
   info = infoDataSet(ds)
   dataset_name = toString(ds$Name)

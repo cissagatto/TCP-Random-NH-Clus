@@ -18,8 +18,8 @@
 ##################################################################################################
 
 
-FolderRoot = "~/TCP-Random-NH/"
-FolderScripts = paste(FolderRoot, "/R/", sep="")
+FolderRoot = "~/TCP-Random-NH-Clus"
+FolderScripts = "~/TCP-Random-NH-Clus/R"
 
 
 ##################################################################################################
@@ -32,8 +32,6 @@ FolderScripts = paste(FolderRoot, "/R/", sep="")
 buildAndTest5 <- function(ds, dataset_name, number_dataset,
                          number_folds, number_cores,
                          folderResults, diretorios){
-
-  if(interactive()==TRUE){ flush.console() }
 
   diretorios = diretorios
 
@@ -48,8 +46,8 @@ buildAndTest5 <- function(ds, dataset_name, number_dataset,
 
     diretorios = diretorios
 
-    FolderRoot = "~/TCP-Random-NH/"
-    FolderScripts = paste(FolderRoot, "/R/", sep="")
+    FolderRoot = "~/TCP-Random-NH-Clus"
+    FolderScripts = "~/TCP-Random-NH-Clus/R"
 
     setwd(FolderScripts)
     source("utils.R")
@@ -440,8 +438,6 @@ juntaResultados5 <- function(ds, dataset_name, number_dataset,
                              number_folds, number_cores,
                              folderResults, diretorios){
 
-  if(interactive()==TRUE){ flush.console() }
-
   #cat("\nFrom 1 to 10 folds!")
   # start build partitions
   # do fold 1 até o último fold
@@ -453,8 +449,8 @@ juntaResultados5 <- function(ds, dataset_name, number_dataset,
     cat("\n#Fold: ", f)
     cat("\n#=========================================================")
 
-    FolderRoot = "~/TCP-Random-NH/"
-    FolderScripts = paste(FolderRoot, "/R/", sep="")
+    FolderRoot = "~/TCP-Random-NH-Clus"
+    FolderScripts = "~/TCP-Random-NH-Clus/R"
 
     setwd(FolderScripts)
     source("utils.R")
@@ -582,9 +578,7 @@ avaliaTest2 <- function(ds, dataset_name, number_dataset,
                        number_folds, number_cores,
                        folderResults, diretorios){
 
-  if(interactive()==TRUE){ flush.console() }
-
-  #cat("\nFrom 1 to 10 folds!")
+    #cat("\nFrom 1 to 10 folds!")
   # start build partitions
   # do fold 1 até o último fold
   f = 1
@@ -597,8 +591,8 @@ avaliaTest2 <- function(ds, dataset_name, number_dataset,
 
     folders = list()
 
-    FolderRoot = "~/TCP-Random-NH/"
-    FolderScripts = paste(FolderRoot, "/R/", sep="")
+    FolderRoot = "~/TCP-Random-NH-Clus"
+    FolderScripts = "~/TCP-Random-NH-Clus/R"
 
     setwd(FolderScripts)
     source("utils.R")
