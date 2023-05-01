@@ -94,13 +94,13 @@ cat("\n# ====> TCP-Random-NH: GET THE DATASET NAME: ", dataset_name, "         #
 cat("\n#####################################################################\n\n")
 
 
-#ds <- datasets[22,]
-#number_dataset = 22
-#number_cores = 10
-#number_folds = 10
-#similarity = "Random"
-#folderResults = "/dev/shm/res"
-#dataset_name = ds$Name
+# ds <- datasets[41,]
+# number_dataset = 41
+# number_cores = 1
+# number_folds = 10
+# similarity = "Random"
+# folderResults = "/dev/shm/res"
+# dataset_name = ds$Name
 
 
 cat("\n\n###################################################################")
@@ -302,7 +302,7 @@ if(dir.exists(str1)==FALSE){dir.create(str1)}
 str2 = paste(str1, "/", dataset_name, sep="")
 if(dir.exists(str2)==FALSE){dir.create(str2)}
 
-str4 = paste("cp -r ", diretorios$folderReports, "/* ", str3, sep="")
+str4 = paste("cp -r ", diretorios$folderReports, "/* ", str2, sep="")
 print(system(str4))
 
 
