@@ -113,7 +113,8 @@ The results are store in the Reports folder
 Click [here](https://youtu.be/sAJJhBw_Rkc) to watch a video that demonstrate how to run this code
 
 ## Acknowledgment
-This study is financed in part by the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil (CAPES) - Finance Code 001
+- This study is financed in part by the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil (CAPES) - Finance Code 001
+- This study is financed in part by the Conselho Nacional de Desenvolvimento Científico e Tecnológico - Brasil (CNPQ) - Process number 200371/2022-3.
 
 ## Links
 
